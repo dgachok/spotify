@@ -18,7 +18,7 @@ const ModalStyled = styled.div`
     padding: 10px
     position: absolute;
     background-color: #fff;
-    width: 400px;
+    width: 350px;
     height: 400px;
     overflow-y: auto;
     top: 50%;

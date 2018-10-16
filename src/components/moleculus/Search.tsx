@@ -30,7 +30,7 @@ class Search extends React.PureComponent<Props, State> {
                 <TextField
                     onChange={this.onChangeSearch}
                     onKeyPress={this.onKeyPressSearch}
-                    label="Song's search"
+                    label="Search"
                     helperText="Click enter for searching"
                     margin="normal"
                 />
