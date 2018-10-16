@@ -1,5 +1,5 @@
 import * as React from "react";
-import {getToken, CLIENT_ID} from "src/utils/auth";
+import {getToken, CLIENT_ID, REDIRECT_URL} from "src/utils/auth";
 import history from "src/utils/history";
 import {Button} from "@material-ui/core";
 import logo from "src/logo.png"
@@ -25,7 +25,7 @@ class Login extends React.PureComponent {
     render() {
         const url = new URL('https://accounts.spotify.com/authorize');
         url.searchParams.set('response_type', 'token');
-        url.searchParams.set('redirect_uri', 'http://localhost:3000/');
+        url.searchParams.set('redirect_uri', REDIRECT_URL);
         url.searchParams.set('client_id', CLIENT_ID);
 
         return (
