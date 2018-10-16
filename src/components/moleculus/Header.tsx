@@ -15,6 +15,7 @@ const HeaderStyled = styled.div`
     flex-direction: row;
     align-items: center;
     padding: 0 20px 20px;
+    flex-wrap: wrap;
 `;
 
 const LogoStyled = styled.img`
@@ -28,7 +29,7 @@ const SearchBarStyled = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    flex: 1;
 `;
 
 class Header extends React.PureComponent<Props> {
